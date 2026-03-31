@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── 마크다운 미리보기 스타일 (write 페이지) ── */
+.write-preview-content .md-h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e8eaf6;
+  margin: 0 0 24px;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.write-preview-content .md-h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c5cee0;
+  margin: 32px 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.write-preview-content .md-h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #9aa8d0;
+  margin: 24px 0 12px;
+}
+
+.write-preview-content .md-p {
+  color: #8a9bbf;
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+.write-preview-content .md-blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #6b7db3;
+  font-style: italic;
+}
+
+.write-preview-content .md-inline-code {
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 0.875em;
+  color: #818cf8;
+}
+
+.write-preview-content .md-code-block {
+  background: rgba(99, 102, 241, 0.07);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 16px 0;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #9aa8d0;
+}
+
+.write-preview-content .md-link {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.write-preview-content .md-link:hover {
+  color: #a5b4fc;
+}
+
+.write-preview-content .md-li {
+  list-style: disc;
+  margin-left: 24px;
+  margin-bottom: 6px;
+  color: #8a9bbf;
+  line-height: 1.7;
+}
+
