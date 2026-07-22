@@ -1,5 +1,7 @@
 # 🚀 Cheers Blog
 
+[한국어](#-cheers-blog) · [English](#english)
+
 > **Next.js & Supabase로 구축한 강력하고 아름다운 개인 블로그 플랫폼**
 
 생각을 기록하고, 가치 있는 정보를 나누는 데 최적화된 블로그 서비스입니다. **Next.js 15+ (App Router)**와 **Supabase**의 강력한 기능을 결합하여, 빠르고 안정적인 사용자 경험을 제공합니다.
@@ -93,3 +95,43 @@ Supabase SQL Editor에서 다음 파일들의 내용을 순차적으로 실행�
 ---
 
 **Crafted with ❤️ by hjy0221**
+
+---
+
+## English
+
+Cheers Blog is a personal publishing platform built with Next.js and Supabase for writing, organizing, and discovering posts.
+
+### Key features
+
+- Markdown editor with live preview
+- Email authentication through Supabase Auth
+- Category-based organization and real-time search filtering
+- Responsive design with dark-mode support
+- Server-side data handling with Server Actions
+
+### Tech stack
+
+| Area | Technology |
+| --- | --- |
+| Frontend | Next.js App Router, React 19, Tailwind CSS v4 |
+| Backend | Supabase Auth, Database, and Storage |
+| Language | TypeScript |
+
+### Getting started
+
+Create `.env.local`:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+Then run:
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Database migrations and sample data are available under `supabase/`.
