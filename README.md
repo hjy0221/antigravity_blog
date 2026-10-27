@@ -135,3 +135,19 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Database migrations and sample data are available under `supabase/`.
+
+
+### Project structure
+
+`app/` contains App Router pages for authentication, posts, and the Markdown editor; `components/` contains reusable UI; `supabase/` contains migrations and seed data; `utils/` contains utilities including the Supabase client; and `public/` contains static assets. Icons use Lucide React and styling also uses modern vanilla CSS.
+
+### Database initialization
+
+In the Supabase SQL Editor, run these files in order to set up tables and policies:
+
+1. `supabase/migrations/20240401000000_create_blog_tables.sql`
+2. `supabase/migrations/20240401000001_setup_rls_policies.sql`
+3. `supabase/migrations/20240401000002_add_author_and_status.sql`
+4. `supabase/seed.sql` (sample data)
+
+The project is licensed under the MIT License.
