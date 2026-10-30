@@ -1,6 +1,100 @@
 # 🚀 Cheers Blog
 
-[한국어](#-cheers-blog) · [English](#english)
+[日本語](https://github.com/hjy0221/antigravity_blog#%E6%97%A5%E6%9C%AC%E8%AA%9E) · [English](https://github.com/hjy0221/antigravity_blog#english) · [한국어](https://github.com/hjy0221/antigravity_blog#%ED%95%9C%EA%B5%AD%EC%96%B4)
+
+## 日本語
+
+Cheers Blog は Next.js と Supabase を使った個人ブログです。
+
+### 主な機能
+
+- プレビュー付き Markdown エディター
+- Supabase Auth によるメール認証
+- カテゴリー管理とリアルタイム検索
+- ダークモード対応、Server Actions によるデータ処理
+
+### 技術と構成
+
+Next.js 15+、React 19、Tailwind CSS v4、TypeScript、Supabase、Lucide React を使用します。`app/` はページ、`components/` は UI、`supabase/` はマイグレーションと初期データ、`utils/` はユーティリティ、`public/` は静的ファイルです。
+
+### 開始方法
+
+`.env.local` を作成します。
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+```bash
+npm install
+npm run dev
+```
+
+[http://localhost:3000](http://localhost:3000) を開きます。Supabase SQL Editor で次のファイルを順に実行します。
+
+1. `supabase/migrations/20240401000000_create_blog_tables.sql`
+2. `supabase/migrations/20240401000001_setup_rls_policies.sql`
+3. `supabase/migrations/20240401000002_add_author_and_status.sql`
+4. `supabase/seed.sql`（サンプルデータ）
+
+ライセンスは MIT です。
+
+## English
+
+Cheers Blog is a personal publishing platform built with Next.js and Supabase for writing, organizing, and discovering posts.
+
+### Key features
+
+- Markdown editor with live preview
+- Email authentication through Supabase Auth
+- Category-based organization and real-time search filtering
+- Responsive design with dark-mode support
+- Server-side data handling with Server Actions
+
+### Tech stack
+
+| Area | Technology |
+| --- | --- |
+| Frontend | Next.js App Router, React 19, Tailwind CSS v4 |
+| Backend | Supabase Auth, Database, and Storage |
+| Language | TypeScript |
+
+### Getting started
+
+Create `.env.local`:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+Then run:
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Database migrations and sample data are available under `supabase/`.
+
+
+### Project structure
+
+`app/` contains App Router pages for authentication, posts, and the Markdown editor; `components/` contains reusable UI; `supabase/` contains migrations and seed data; `utils/` contains utilities including the Supabase client; and `public/` contains static assets. Icons use Lucide React and styling also uses modern vanilla CSS.
+
+### Database initialization
+
+In the Supabase SQL Editor, run these files in order to set up tables and policies:
+
+1. `supabase/migrations/20240401000000_create_blog_tables.sql`
+2. `supabase/migrations/20240401000001_setup_rls_policies.sql`
+3. `supabase/migrations/20240401000002_add_author_and_status.sql`
+4. `supabase/seed.sql` (sample data)
+
+The project is licensed under the MIT License.
+
+## 한국어
 
 > **Next.js & Supabase로 구축한 강력하고 아름다운 개인 블로그 플랫폼**
 
@@ -95,59 +189,3 @@ Supabase SQL Editor에서 다음 파일들의 내용을 순차적으로 실행�
 ---
 
 **Crafted with ❤️ by hjy0221**
-
----
-
-## English
-
-Cheers Blog is a personal publishing platform built with Next.js and Supabase for writing, organizing, and discovering posts.
-
-### Key features
-
-- Markdown editor with live preview
-- Email authentication through Supabase Auth
-- Category-based organization and real-time search filtering
-- Responsive design with dark-mode support
-- Server-side data handling with Server Actions
-
-### Tech stack
-
-| Area | Technology |
-| --- | --- |
-| Frontend | Next.js App Router, React 19, Tailwind CSS v4 |
-| Backend | Supabase Auth, Database, and Storage |
-| Language | TypeScript |
-
-### Getting started
-
-Create `.env.local`:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
-NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
-```
-
-Then run:
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000). Database migrations and sample data are available under `supabase/`.
-
-
-### Project structure
-
-`app/` contains App Router pages for authentication, posts, and the Markdown editor; `components/` contains reusable UI; `supabase/` contains migrations and seed data; `utils/` contains utilities including the Supabase client; and `public/` contains static assets. Icons use Lucide React and styling also uses modern vanilla CSS.
-
-### Database initialization
-
-In the Supabase SQL Editor, run these files in order to set up tables and policies:
-
-1. `supabase/migrations/20240401000000_create_blog_tables.sql`
-2. `supabase/migrations/20240401000001_setup_rls_policies.sql`
-3. `supabase/migrations/20240401000002_add_author_and_status.sql`
-4. `supabase/seed.sql` (sample data)
-
-The project is licensed under the MIT License.
