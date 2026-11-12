@@ -4,8 +4,6 @@
 
 ## 日本語
 
-[日本語](https://github.com/hjy0221/antigravity_blog#%E6%97%A5%E6%9C%AC%E8%AA%9E) · [English](https://github.com/hjy0221/antigravity_blog#english) · [한국어](https://github.com/hjy0221/antigravity_blog#%ED%95%9C%EA%B5%AD%EC%96%B4)
-
 > **Next.js＆Supabaseで構築した強力で美しいプライベートブログプラットフォーム**
 
 思考を記録し、貴重な情報を共有するために最適化されたブログサービスです。 **Next.js 15+（App Router）**と**Supabase**の強力な機能を組み合わせて、迅速で信頼性の高いユーザーエクスペリエンスを提供します。
@@ -102,8 +100,6 @@ Supabase SQL Editorで、次のファイルの内容を順次実行してテー�
 
 ## English
 
-[日本語](https://github.com/hjy0221/antigravity_blog#%E6%97%A5%E6%9C%AC%E8%AA%9E) · [English](https://github.com/hjy0221/antigravity_blog#english) · [한국어](https://github.com/hjy0221/antigravity_blog#%ED%95%9C%EA%B5%AD%EC%96%B4)
-
 > **Powerful and beautiful personal blogging platform built with Next.js & Supabase**
 
 This is a blog service optimized for recording thoughts and sharing valuable information. By combining the powerful features of **Next.js 15+ (App Router)** and **Supabase**, it provides a fast and stable user experience.
@@ -199,8 +195,6 @@ This project follows the MIT License.
 **Crafted with ❤️ by hjy0221**
 
 ## 한국어
-
-[日本語](https://github.com/hjy0221/antigravity_blog#%E6%97%A5%E6%9C%AC%E8%AA%9E) · [English](https://github.com/hjy0221/antigravity_blog#english) · [한국어](https://github.com/hjy0221/antigravity_blog#%ED%95%9C%EA%B5%AD%EC%96%B4)
 
 > **Next.js & Supabase로 구축한 강력하고 아름다운 개인 블로그 플랫폼**
 
